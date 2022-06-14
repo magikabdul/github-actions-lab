@@ -15,6 +15,14 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_LOGIN: adademia
+          POSTGRES_PASSWORD: akademia
+          POSTGRES_DB: actions
 
     steps:
     - uses: actions/checkout@v3
