@@ -23,6 +23,11 @@ jobs:
           POSTGRES_LOGIN: adademia
           POSTGRES_PASSWORD: akademia
           POSTGRES_DB: actions
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
     - uses: actions/checkout@v3
