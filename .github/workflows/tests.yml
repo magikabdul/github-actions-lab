@@ -20,7 +20,7 @@ jobs:
       postgres:
         image: postgres
         env:
-          POSTGRES_LOGIN: adademia
+          POSTGRES_LOGIN: akademia
           POSTGRES_PASSWORD: akademia
           POSTGRES_DB: actions
         options: >-
