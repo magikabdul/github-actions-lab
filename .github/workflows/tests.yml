@@ -23,6 +23,8 @@ jobs:
           POSTGRES_LOGIN: akademia
           POSTGRES_PASSWORD: akademia
           POSTGRES_DB: actions
+        ports:
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
