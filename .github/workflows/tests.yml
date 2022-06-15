@@ -8,20 +8,20 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
   workflow_dispatch:
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres
         env:
-          POSTGRES_USER: akademia
-          POSTGRES_PASSWORD: akademia
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
           POSTGRES_DB: actions
         ports:
           - 5432:5432
